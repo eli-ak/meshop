@@ -1,0 +1,14 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "online shopping for learning ract",
+  "main": "serevr.js",
+  "scripts": {
+    "dev": "node ./backend/server.js"
+  },
+  "author": "elham akbarpoor",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

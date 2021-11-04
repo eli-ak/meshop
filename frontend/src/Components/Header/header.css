@@ -1,0 +1,14 @@
+.header_title{
+	color:red;
+}
+
+.header-icon-align{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.header-icon-align span{
+	padding-left: 8px;
+}
