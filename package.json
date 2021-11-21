@@ -1,14 +1,30 @@
 {
   "name": "proshop",
+  "proxy": "http://127.0.0.1:5000",
   "version": "1.0.0",
   "description": "online shopping for learning ract",
   "main": "serevr.js",
+  "type": "module",
   "scripts": {
-    "dev": "node ./backend/server.js"
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import":"node backend/seeder.js -i",
+    "data:destroy":"node backend/seeder.js -d"
+
   },
   "author": "elham akbarpoor",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "axios": "^0.24.0",
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "concurrently": "^6.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12",
+    "mongose": "0.0.2-security",
+    "nodemon": "^2.0.15"
   }
 }
